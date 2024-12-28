@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>We've Moved</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: "Arial", sans-serif;
+        color: #ffffff;
+        text-align: center;
+        overflow: hidden;
+        background: linear-gradient(135deg, #1e3c72, #2a5298);
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        animation: gradientBG 6s ease infinite alternate;
+      }
+
+      @keyframes gradientBG {
+        0% {
+          background: linear-gradient(135deg, #1e3c72, #2a5298);
+        }
+        100% {
+          background: linear-gradient(135deg, #2a5298, #1e3c72);
+        }
+      }
+
+      h1 {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+        animation: fadeInDown 2s;
+      }
+
+      @keyframes fadeInDown {
+        from {
+          opacity: 0;
+          transform: translateY(-50px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      p {
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+        animation: fadeInUp 2s;
+      }
+
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(50px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      a {
+        display: inline-block;
+        padding: 1rem 2rem;
+        font-size: 1.25rem;
+        color: #ffffff;
+        text-decoration: none;
+        border: 2px solid #ffffff;
+        border-radius: 25px;
+        animation: pulse 2s infinite;
+        transition: background-color 0.3s, color 0.3s;
+      }
+
+      a:hover {
+        background-color: #ffffff;
+        color: #1e3c72;
+      }
+
+      @keyframes pulse {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.05);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+
+      .logo {
+        width: 150px;
+        margin-bottom: 1.5rem;
+        animation: fadeIn 2s;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <img src="./chemineer logo.png" alt="Chemineers Logo" class="logo" />
+    <h1>We've Moved!</h1>
+    <p>Our new home is just a click away.</p>
+    <a href="https://chemineers.com" target="_blank">Visit chemineers.com</a>
+  </body>
+</html>
